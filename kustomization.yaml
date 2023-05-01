@@ -3,6 +3,9 @@ kind: Kustomization
 commonLabels:
   app: elk
 resources:
-  - service.yaml
-  - deployment.yaml
-  - hpa.yaml
+  - namespace.yaml
+  - operator.yaml
+  - crd.yaml
+  - eck.yaml
+  - filebeat.yaml
+  - ingress.yaml
