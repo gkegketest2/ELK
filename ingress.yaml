@@ -9,10 +9,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-      - kibana.framsouza.co
+      - kibana.elk.com
     secretName: letsencrypt-cert
   rules:
-    - host: kibana.framsouza.co
+    - host: kibana.elk.com
       http:
         paths:
           - path: /
@@ -35,10 +35,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-      - monitoring.framsouza.co
+      - kibana.elk.com
     secretName: letsencrypt-cert
   rules:
-    - host: monitoring.framsouza.co
+    - host: kibana.elk.com
       http:
         paths:
           - path: /
