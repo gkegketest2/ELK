@@ -1,4 +1,8 @@
-configMapGenerator:
-- name: example-configmap-1
-  files:
-  - application.properties
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:
+  app: elk
+resources:
+  - service.yaml
+  - deployment.yaml
+  - hpa.yaml
